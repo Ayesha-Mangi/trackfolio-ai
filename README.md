@@ -1,5 +1,24 @@
 # TrackFolio AI 🎓🤖
 > **AI-Powered Opportunity Tracker & Resume Tailoring Platform for University Students**
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange)
+![Gemini](https://img.shields.io/badge/Google-Gemini-green)
+![Railway](https://img.shields.io/badge/Hosted%20on-Railway-purple)
+
+---
+
+# 🌍 Live Demo
+
+### 🚀 Live Application
+
+https://trackfolio-ai-production.up.railway.app/
+
+### 💻 GitHub Repository
+
+https://github.com/Ayesha-Mangi/trackfolio-ai
+
+---
 
 TrackFolio AI is a comprehensive full-stack application designed specifically for university students, researchers, and job seekers. It centralizes application tracking across internships, full-time jobs, scholarships, research positions, and hackathons while offering AI-driven ATS fit analysis, resume parsing, cover letter generation, and interview preparation powered by Google Gemini.
 
