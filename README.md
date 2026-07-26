@@ -292,15 +292,28 @@ https://trackfolio-ai-production.up.railway.app/
 
 ## 🏗️ Project Architecture
 
-Frontend (React + Vite)
-        │
-        ▼
-Express Backend
-        │
- ┌──────┴────────┐
- ▼               ▼
-Firebase      Google Gemini
-Firestore         API
+```text
+                +----------------------+
+                |   React + Vite UI    |
+                +----------+-----------+
+                           |
+                           |
+                    HTTP Requests
+                           |
+                           ▼
+                +----------------------+
+                |   Express Backend    |
+                +----------+-----------+
+                           |
+              +------------+------------+
+              |                         |
+              ▼                         ▼
+     +----------------+        +------------------+
+     | Firebase       |        | Google Gemini AI |
+     | Auth &         |        | Resume Analysis  |
+     | Firestore      |        | ATS Suggestions  |
+     +----------------+        +------------------+
+```
 
 # 📸 Application Screenshots
 
