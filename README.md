@@ -269,41 +269,44 @@ https://trackfolio-ai-production.up.railway.app/
 
 # 📸 Application Screenshots
 
-> Replace the placeholders below with actual screenshots before submission.
 
 ### 🏠 Landing Page
-
-(Add Screenshot)
+<img width="1920" height="1021" alt="image" src="https://github.com/user-attachments/assets/11932821-f75b-414e-ba99-eb1f51b472b7" />
 
 ---
 
 ### 📊 Dashboard
 
-(Add Screenshot)
+<img width="1916" height="908" alt="image" src="https://github.com/user-attachments/assets/79356e2c-fa75-488c-8a35-fa064cc1400a" />
+
 
 ---
 
 ### 🎯 Opportunity Management
 
-(Add Screenshot)
+<img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/fca486c5-7538-4e35-b9f1-4c747d4ade5e" />
+
 
 ---
 
 ### 📄 Resume Upload & Parsing
 
-(Add Screenshot)
+<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/42b5973e-ca3d-457f-ba4d-41e1273c9470" />
+
 
 ---
 
 ### 🤖 AI Resume Analysis
 
-(Add Screenshot)
+<img width="1919" height="880" alt="image" src="https://github.com/user-attachments/assets/8de7c283-0f66-4b7b-b255-f4be53a8f326" />
+
 
 ---
 
 ### 🚀 AI Resume Tailoring
 
-(Add Screenshot)
+<img width="1920" height="892" alt="image" src="https://github.com/user-attachments/assets/1f521e86-4a49-4c20-bddb-00e764d17215" />
+
 
 ---
 
@@ -319,7 +322,7 @@ https://trackfolio-ai-production.up.railway.app/
 
 ---
 
-# 🙏 Acknowledgements
+# Acknowledgements
 
 This project uses the following technologies:
 
