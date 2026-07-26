@@ -1,6 +1,7 @@
 # TrackFolio AI 🎓🤖
+
 > **AI-Powered Opportunity Tracker & Resume Tailoring Platform for University Students**
-> 
+
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange)
@@ -15,162 +16,333 @@
 
 https://trackfolio-ai-production.up.railway.app/
 
-### 💻 GitHub Repository
+### 💻 Public GitHub Repository
 
 https://github.com/Ayesha-Mangi/trackfolio-ai
 
 ---
 
-TrackFolio AI is a comprehensive full-stack application designed specifically for university students, researchers, and job seekers. It centralizes application tracking across internships, full-time jobs, scholarships, research positions, and hackathons while offering AI-driven ATS fit analysis, resume parsing, cover letter generation, and interview preparation powered by Google Gemini.
+# 📖 About the Project
+
+TrackFolio AI is a comprehensive full-stack web application designed specifically for university students, researchers, and job seekers. It centralizes application tracking across internships, full-time jobs, scholarships, research positions, and hackathons while offering AI-driven ATS fit analysis, resume parsing, cover letter generation, and interview preparation powered by Google Gemini.
+
+This project was developed as an original solution to a real problem faced by students who manage multiple opportunities and struggle to tailor resumes for different applications.
 
 ---
 
-## 📌 Problem Statement
+# 📌 Problem Statement
 
-University students apply to dozens of internships, scholarships, and graduate programs each semester. Managing these opportunities across spreadsheets and scattered files leads to missed deadlines, generic application submissions, and low ATS (Applicant Tracking System) response rates.
+University students apply to dozens of internships, scholarships, graduate programs, hackathons, and research opportunities each semester. Managing these applications across spreadsheets and scattered documents often leads to:
 
-**TrackFolio AI solves this by:**
-1. **Centralizing Applications:** A unified Kanban-style and table dashboard with deadline alerts and status tracking.
-2. **AI Resume Parsing & Matching:** Instant PDF/Word document parser that extracts structured experience and compares it against job descriptions using Google Gemini.
-3. **Automated Tailoring:** Generating personalized cover letters, missing keyword analysis, resume bullet recommendations, and interview prep questions.
+- Missed deadlines
+- Poor organization
+- Generic resumes
+- Low ATS (Applicant Tracking System) compatibility
+- Difficulty preparing customized applications
 
----
+## 💡 Solution
 
-## ✨ Key Features
+TrackFolio AI solves these problems by:
 
-### 🎯 Opportunity Management
-- **Multi-Category Tracking:** Organize Internships, Full-Time Jobs, Scholarships, Research, and Hackathons.
-- **Visual Analytics:** Interactive status breakdown (Wishlist, Applied, Interviewing, Offer, Rejected).
-- **Deadline Monitoring:** Color-coded urgency indicators for upcoming deadlines.
-- **Search & Filter:** Instant search by company/title, location type (Remote, Hybrid, Onsite), and status filters.
-
-### 📄 Resume Library & AI Auto-Parsing
-- **Document Upload:** Upload existing PDF (`.pdf`) or Word (`.docx`) resumes up to 5 MB.
-- **Instant AI Extraction:** Automatically parses contact info, professional summary, skills, education, experience, projects, and certifications.
-- **Multi-Resume Support:** Store multiple tailored versions for different roles (e.g., Software Engineer, Data Analyst, Research Assistant).
-- **Export Capabilities:** Download generated or updated resumes as raw content, PDF, or Word documents.
-
-### 🧠 Gemini AI Intelligence Hub
-- **ATS Fit Score:** Multi-factor match scoring algorithm evaluating skills, experience depth, and keyword overlap.
-- **Missing Skills & Keywords:** Identifies exact technical and soft skills absent from your resume relative to the target position.
-- **Resume Bullet Suggestions:** Generates high-impact action bullets tailored specifically to the opportunity description.
-- **Cover Letter Builder:** Custom-tailored, professional cover letter drafting in seconds.
-- **Interview Preparation:** Generates realistic behavioral and technical interview questions with recommended sample answers.
-- **Historical Analysis Storage:** Save and revisit AI analysis reports per application.
+- Centralizing application tracking
+- Organizing multiple resumes
+- Using AI to analyze resumes against job descriptions
+- Generating ATS-friendly resume improvements
+- Creating personalized cover letters
+- Preparing interview questions and application tips
 
 ---
 
-## 🛠️ Tech Stack
+# ✨ Features
 
-### Frontend & Styling
-- **Framework:** React 18 with TypeScript
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS (v4)
-- **Icons:** Lucide React
-- **Routing:** React Router v6
-- **Animations:** Motion / Tailwind Transitions
+## 🎯 Opportunity Management
 
-### Backend & AI APIs
-- **Runtime Environment:** Node.js Express server (`server.ts`)
-- **AI Engine:** `@google/genai` (Gemini 3.6 Flash)
-- **File Parsing:** `pdf-parse` (PDF extraction) & `mammoth` (Word document parsing)
-
-### Database & Authentication
-- **Database:** Firebase Cloud Firestore
-- **Authentication:** Firebase Auth (Email/Password & Session Management)
+- Track Internships, Jobs, Scholarships, Research Opportunities, and Hackathons
+- Add, Edit and Delete Opportunities
+- Status Tracking (Wishlist, Applied, Interviewing, Offer, Rejected)
+- Deadline Monitoring
+- Search & Filter Opportunities
+- Organized Dashboard
 
 ---
 
-## ⚙️ Environment Variables Setup
+## 📄 Resume Library
 
-Before running the application, create a `.env` file in the root directory (refer to `.env.example`):
+- Upload PDF resumes
+- Upload DOCX resumes
+- Store Multiple Resume Versions
+- Resume Management
+- Resume Editing
+
+---
+
+## 🤖 AI Resume Parser
+
+Upload a PDF or DOCX resume and automatically extract:
+
+- Contact Information
+- Professional Summary
+- Skills
+- Education
+- Experience
+- Projects
+- Certifications
+
+---
+
+## 🧠 AI Resume Analysis
+
+Compare a resume against a job description and generate:
+
+- ATS Fit Score
+- Match Summary
+- Missing Skills
+- Missing Keywords
+- Resume Suggestions
+- Tailored Cover Letter
+- Interview Questions
+- Application Tips
+
+---
+
+## 🚀 AI Resume Tailoring
+
+Generate an ATS-friendly optimized resume specifically for the selected opportunity while ensuring:
+
+- No fake experience
+- No fake skills
+- No fake projects
+- No fake certifications
+
+---
+
+# 🤖 AI Feature & System Instructions
+
+TrackFolio AI uses **Google Gemini Flash** as its AI engine.
+
+The AI follows carefully designed system instructions, including:
+
+- Never invent work experience.
+- Never generate fake projects.
+- Never create fake certifications.
+- Never add fake skills.
+- Never exaggerate qualifications.
+- Analyze resumes honestly.
+- Compare resumes against job descriptions.
+- Suggest ATS-friendly improvements.
+- Generate personalized cover letters.
+- Generate interview questions.
+- Return structured JSON responses for reliable processing.
+
+These instructions ensure the AI provides truthful, practical, and useful recommendations.
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- React Router v6
+- Lucide React
+- Motion
+
+## Backend
+
+- Node.js
+- Express.js
+
+## Database
+
+- Firebase Cloud Firestore
+
+## Authentication
+
+- Firebase Authentication
+
+## Artificial Intelligence
+
+- Google Gemini Flash
+- @google/genai SDK
+
+## File Processing
+
+- pdf-parse
+- mammoth
+
+---
+
+# ⚙️ Environment Variables
+
+Create a `.env` file using the provided `.env.example`.
 
 ```env
-# Google Gemini API Key (Server-Side)
-GEMINI_API_KEY=your_gemini_api_key_here
+# Google Gemini API Key
+GEMINI_API_KEY=your_gemini_api_key
 
-# Firebase Configuration (Client-Side)
-VITE_FIREBASE_API_KEY=your_firebase_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+# Firebase Configuration
+VITE_FIREBASE_API_KEY=your_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project
+VITE_FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 ```
 
----
-
-## 🚀 Running Locally
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/trackfolio-ai.git
-   cd trackfolio-ai
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:3000`.
+> ⚠️ Never commit API keys or secrets to GitHub. Keep them in environment variables.
 
 ---
 
-##  🔥 Firebase Setup
+# 🚀 Running Locally
 
-1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
-2. Enable **Firebase Authentication** with Email/Password sign-in.
-3. Provision a **Cloud Firestore Database** in test/production mode.
-4. Add the generated Firebase web configuration keys to your `.env` file (`VITE_FIREBASE_*`).
+## Prerequisites
 
----
+- Node.js (v18 or later)
+- npm
 
-## 🌐 Deployment
+## Installation
 
-The application is structured for seamless full-stack deployment on platforms like Cloud Run, Vercel, or Render.
+Clone the repository
 
 ```bash
-# Production Build
-npm run build
+git clone https://github.com/Ayesha-Mangi/trackfolio-ai.git
+```
 
-# Start Production Server
-npm run start
+Move into the project
+
+```bash
+cd trackfolio-ai
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Open your browser
+
+```
+http://localhost:3000
 ```
 
 ---
 
-## 📸 Application Screenshots
+# 🔥 Firebase Setup
 
-| Dashboard Overview | AI Analysis Hub |
-| :---: | :---: |
-| Application status breakdown, deadline alerts & opportunity pipeline | ATS match score, missing keywords & tailored cover letters |
-
-| Resume Library | AI Upload Parser |
-| :---: | :---: |
-| Version control for tailored resumes & quick actions | PDF/Word document drag-and-drop auto-extraction |
-
----
-
-## 🔮 Future Improvements
-
-- [ ] **Email Notification Alerts:** Automated email notifications for deadlines in 3, 2, and 1 day.
-- [ ] **Chrome Extension:** One-click opportunity saving directly from LinkedIn, Indeed, and Handshake.
-- [ ] **Interactive Kanban View:** Drag-and-drop card columns for opportunity status progression.
-- [ ] **Exportable Analytics Reports:** Export monthly career metrics as PDF summaries.
+1. Create a Firebase Project.
+2. Enable Firebase Authentication.
+3. Enable Email/Password Authentication.
+4. (Optional) Enable Google Sign-In.
+5. Create a Firestore Database.
+6. Add Firebase configuration values to the `.env` file.
+7. Add your deployed Railway domain to Firebase Authorized Domains.
 
 ---
 
-## 📄 License
+# 🌐 Deployment
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is deployed publicly using **Railway**.
+
+Deployment includes:
+
+- React + Vite Frontend
+- Express Backend
+- Firebase Authentication
+- Firestore Database
+- Google Gemini API
+
+### Live URL
+
+https://trackfolio-ai-production.up.railway.app/
+
+---
+
+# 📸 Application Screenshots
+
+> Replace the placeholders below with actual screenshots before submission.
+
+### 🏠 Landing Page
+
+(Add Screenshot)
+
+---
+
+### 📊 Dashboard
+
+(Add Screenshot)
+
+---
+
+### 🎯 Opportunity Management
+
+(Add Screenshot)
+
+---
+
+### 📄 Resume Upload & Parsing
+
+(Add Screenshot)
+
+---
+
+### 🤖 AI Resume Analysis
+
+(Add Screenshot)
+
+---
+
+### 🚀 AI Resume Tailoring
+
+(Add Screenshot)
+
+---
+
+# 🔮 Future Improvements
+
+- Email reminder notifications
+- Calendar integration
+- Chrome Extension
+- Drag-and-drop Kanban Board
+- Resume Version Comparison
+- Export analytics reports
+- Multi-language support
+
+---
+
+# 🙏 Acknowledgements
+
+This project uses the following technologies:
+
+- React
+- Vite
+- Firebase
+- Google Gemini
+- Railway
+- Tailwind CSS
+- Express.js
+
+Special thanks to the open-source community for providing the tools and libraries that made this project possible.
+
+---
+
+# 👩‍💻 Author
+
+**Ayesha Mangi**
+
+BS Computer Science Student
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
