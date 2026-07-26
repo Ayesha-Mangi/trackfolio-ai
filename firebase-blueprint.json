@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "User profile data",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "createdAt"]
+    },
+    "opportunities": {
+      "title": "Opportunity",
+      "description": "Tracked opportunity item (internship, scholarship, hackathon, fellowship, job, etc.)",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "organization": { "type": "string" },
+        "type": { "type": "string" },
+        "status": { "type": "string" },
+        "deadline": { "type": "string" },
+        "url": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "createdAt"]
+    },
+    "resumes": {
+      "title": "Resume",
+      "description": "User created resume documents",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "fullName": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "location": { "type": "string" },
+        "professionalSummary": { "type": "string" },
+        "education": { "type": "array" },
+        "experience": { "type": "array" },
+        "skills": { "type": "array" },
+        "projects": { "type": "array" },
+        "certifications": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "fullName", "createdAt"]
+    },
+    "aiAnalysis": {
+      "title": "AI Analysis",
+      "description": "AI analysis records",
+      "properties": {
+        "userId": { "type": "string" },
+        "opportunityId": { "type": "string" },
+        "summary": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "createdAt"]
+    }
+  }
+}
