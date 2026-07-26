@@ -1,5 +1,6 @@
 # TrackFolio AI 🎓🤖
 > **AI-Powered Opportunity Tracker & Resume Tailoring Platform for University Students**
+> 
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange)
