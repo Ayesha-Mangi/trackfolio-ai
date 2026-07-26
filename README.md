@@ -10,14 +10,12 @@
 
 ---
 
-# 🌍 Live Demo
+## 🌍 Live Demo
 
-### 🚀 Live Application
-
+🚀 **Live Application:**  
 https://trackfolio-ai-production.up.railway.app/
 
-### 💻 Public GitHub Repository
-
+💻 **GitHub Repository:**  
 https://github.com/Ayesha-Mangi/trackfolio-ai
 
 ---
@@ -52,6 +50,23 @@ TrackFolio AI solves these problems by:
 - Preparing interview questions and application tips
 
 ---
+
+## 💭 Why I Built This Project
+
+As a Computer Science student, I observed that many university students struggle to manage multiple internships, scholarships, research opportunities, and hackathons. They often rely on spreadsheets and manually tailor resumes for every application, making the process time-consuming and inefficient.
+
+I built TrackFolio AI to solve this real-world problem by combining opportunity management with AI-powered resume analysis and tailoring in a single platform.
+
+## 👥 Target Users
+
+TrackFolio AI is designed for:
+
+- University Students
+- Fresh Graduates
+- Internship Applicants
+- Scholarship Applicants
+- Research Students
+- Job Seekers
 
 # ✨ Features
 
@@ -116,27 +131,33 @@ Generate an ATS-friendly optimized resume specifically for the selected opportun
 
 ---
 
-# 🤖 AI Feature & System Instructions
+## 🤖 AI Feature & System Instructions
 
-TrackFolio AI uses **Google Gemini Flash** as its AI engine.
+TrackFolio AI uses **Google Gemini Flash** to provide intelligent career assistance.
 
-The AI follows carefully designed system instructions, including:
+The AI performs:
+
+- Resume Parsing
+- ATS Resume Analysis
+- Resume Tailoring
+- Cover Letter Generation
+- Interview Preparation
+- Missing Skills Detection
+
+### Custom System Instructions
+
+The prompts and system instructions used in this project were written specifically for TrackFolio AI.
+
+Key rules include:
 
 - Never invent work experience.
-- Never generate fake projects.
-- Never create fake certifications.
-- Never add fake skills.
+- Never generate fake skills or certifications.
 - Never exaggerate qualifications.
-- Analyze resumes honestly.
-- Compare resumes against job descriptions.
+- Compare resumes honestly with job descriptions.
 - Suggest ATS-friendly improvements.
 - Generate personalized cover letters.
-- Generate interview questions.
-- Return structured JSON responses for reliable processing.
-
-These instructions ensure the AI provides truthful, practical, and useful recommendations.
-
----
+- Produce interview questions and application tips.
+- Return structured JSON responses for reliable application processing.
 
 # 🛠 Tech Stack
 
@@ -249,23 +270,37 @@ http://localhost:3000
 
 ---
 
-# 🌐 Deployment
+## 🌐 Deployment
 
-This project is deployed publicly using **Railway**.
+This application is deployed on **Railway**.
 
-Deployment includes:
+The deployment includes:
 
 - React + Vite Frontend
 - Express Backend
 - Firebase Authentication
-- Firestore Database
-- Google Gemini API
+- Cloud Firestore Database
+- Google Gemini AI Integration
+
+Every push to the `main` branch automatically triggers a new deployment.
 
 ### Live URL
 
 https://trackfolio-ai-production.up.railway.app/
 
 ---
+
+## 🏗️ Project Architecture
+
+Frontend (React + Vite)
+        │
+        ▼
+Express Backend
+        │
+ ┌──────┴────────┐
+ ▼               ▼
+Firebase      Google Gemini
+Firestore         API
 
 # 📸 Application Screenshots
 
