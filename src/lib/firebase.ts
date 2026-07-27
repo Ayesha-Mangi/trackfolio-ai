@@ -1,7 +1,16 @@
 import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
 import { getAuth, Auth } from 'firebase/auth';
 import { getFirestore, Firestore } from 'firebase/firestore';
-import firebaseConfig from '../../firebase-applet-config.json';
+
+
+const firebaseConfig = {
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+};
 
 let app: FirebaseApp;
 let auth: Auth;
@@ -17,11 +26,12 @@ try {
   auth = getAuth(app);
   
   // Initialize Firestore with database ID if specified in config
-  if (firebaseConfig.firestoreDatabaseId) {
-    db = getFirestore(app, firebaseConfig.firestoreDatabaseId);
-  } else {
-    db = getFirestore(app);
-  }
+  // if (firebaseConfig.firestoreDatabaseId) {
+  //   db = getFirestore(app, firebaseConfig.firestoreDatabaseId);
+  // } else {
+  //   db = getFirestore(app);
+  // }
+  db = getFirestore(app);
 } catch (error) {
   console.error('Firebase initialization error:', error);
   // Fallback initialization if needed
